@@ -3,7 +3,10 @@
   "version": "1.6.0",
   "description": "eslint+xo sharable config with some opinionated rule overrides",
   "main": "index.js",
-  "repository": "git@github.com:futpib/eslint-config-xo-overrides.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/futpib/eslint-config-xo-overrides.git"
+  },
   "author": "futpib <futpib@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -15,6 +18,6 @@
   "scripts": {
     "test": "xo"
   },
-  "bin": "./cli.js",
+  "bin": "cli.js",
   "packageManager": "yarn@4.5.1"
 }
