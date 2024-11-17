@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-xo-overrides",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "eslint+xo sharable config with some opinionated rule overrides",
   "main": "index.js",
   "repository": "git@github.com:futpib/eslint-config-xo-overrides.git",
