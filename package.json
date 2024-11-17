@@ -6,9 +6,8 @@
   "repository": "git@github.com:futpib/eslint-config-xo-overrides.git",
   "author": "futpib <futpib@gmail.com>",
   "license": "MIT",
-  "private": false,
   "devDependencies": {
-    "xo": "^0.40.1"
+    "xo": "^0.59.3"
   },
   "xo": {
     "extends": "."
@@ -16,7 +15,6 @@
   "scripts": {
     "test": "xo"
   },
-  "bin": {
-    "eslint-config-xo-overrides": "./cli.js"
-  }
+  "bin": "./cli.js",
+  "packageManager": "yarn@4.5.1"
 }

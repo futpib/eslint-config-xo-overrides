@@ -13,6 +13,7 @@ module.exports = {
 		'operator-linebreak': [ 'error', 'before' ],
 
 		'unicorn/custom-error-definition': 'off',
+		'unicorn/filename-case': 'off',
 		'unicorn/no-array-reduce': 'off',
 		'unicorn/prefer-module': 'off',
 	},
