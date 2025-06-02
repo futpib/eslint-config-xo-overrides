@@ -70,14 +70,33 @@ or
 npm install --save-dev eslint-config-xo-overrides
 ```
 
-### With XO
+### With XO (Recommended)
 
-Create a `xo.config.js` file:
+Use the included CLI tool to automatically create a `xo.config.js` file:
+
+```bash
+yarn eslint-config-xo-overrides
+# or
+./node_modules/.bin/eslint-config-xo-overrides
+```
+
+This will create a `xo.config.js` file with:
 
 ```js
 const xoOverrides = require('eslint-config-xo-overrides');
 
 module.exports = xoOverrides;
+```
+
+If you already have a `xo.config.js` file, manually add the config:
+
+```js
+const xoOverrides = require('eslint-config-xo-overrides');
+
+module.exports = [
+  ...xoOverrides,
+  // Your other configs...
+];
 ```
 
 ### With ESLint (Flat Config)
@@ -91,24 +110,4 @@ module.exports = [
   // Your other configs...
   ...xoOverrides,
 ];
-```
-
-### Legacy Configuration
-
-For the legacy eslintrc format with XO, you can use the CLI tool:
-
-```bash
-yarn eslint-config-xo-overrides
-# or
-./node_modules/.bin/eslint-config-xo-overrides
-```
-
-This will add the following to your `package.json`:
-
-```json
-{
-  "xo": {
-    "extends": ["eslint-config-xo-overrides"]
-  }
-}
 ```
