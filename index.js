@@ -6,6 +6,7 @@ module.exports = [
 			'@stylistic/array-bracket-spacing': [ 'error', 'always' ],
 			'@stylistic/comma-dangle': [ 'error', 'always-multiline' ],
 			'@stylistic/object-curly-spacing': [ 'error', 'always' ],
+			'@stylistic/block-spacing': [ 'error', 'always' ],
 			'@stylistic/operator-linebreak': [ 'error', 'before' ],
 
 			camelcase: [ 'error', {
